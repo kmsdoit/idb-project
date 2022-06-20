@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./IDB-css/index.css">
+  <link rel="stylesheet" media="( min-width:701px ) and ( max-width:1555px )" href="IDB-css/table.css">
+  <link rel="stylesheet" media="( min-width:0px ) and ( max-width:700px )" href="./IDB-css/mobile.css">
+
+  <link rel="stylesheet" href="./IDB-css/cs_history.css">
+  <!-- JQUERY -->
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+  <!-- AOS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <!-- CSS -->
+  <style>
+    /* Footer */
+
+    footer {
+      position: relative;
+      width: 100%;
+      height: auto;
+      padding: 50px 100px;
+      background: #333;
+      color: #FFF;
+    }
+
+    footer .container2 {
+      width: 100%;
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      grid-gap: 20px;
+    }
+
+    footer .container2 .sec h2 {
+      position: relative;
+      color: #FFF;
+      font-weight: 500;
+      margin-bottom: 15px;
+    }
+
+    footer .container2 .sec p {
+      color: #FFF;
+    }
+
+    .quicklinks {
+      position: relative;
+    }
+
+    .quicklinks li {
+      list-style: none;
+      margin-top: 20px;
+    }
+
+    .quicklinks li a {
+      color: #F7F7F7;
+      text-decoration: none;
+      margin-bottom: 10px;
+    }
+
+    .info {
+      position: relative;
+    }
+
+    .info li {
+      display: grid;
+      grid-template-columns: 30px 1fr;
+      margin-bottom: 16px;
+    }
+
+    .info li span:nth-child(1) {
+      margin-top: 7px;
+      color: #FFF;
+      font-size: 20px;
+    }
+
+    .info li span {
+      color: #FFF;
+    }
+
+    .info a {
+      color: #F7F7F7;
+      text-decoration: none;
+    }
+
+    .info a:hover {
+      color: #FFEB3B;
+    }
+
+    .copyrightText {
+      width: 100%;
+      background: #222;
+      padding: 8px 40px;
+      text-align: center;
+      color: #FFF;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- NAV -->
+  <header>
+    <div class="left">
+      <h1><a href="#"></a></h1>
+      <a href="#" class="all"></a>
+      <div class="nav">
+        <h2>Menu</h2>
+        <nav>
+          <ul>
+            <li>
+              <a href="#" class="dep1">About Us</a> <!-- ------------------------------------(회사소개) -->
+
+              <ul class="dep2">
+                <li><a href="#">비전</a></li>
+                <span style="line-height:50%"><br></span>
+                <li><a href="#">사업소개</a></li>
+              </ul>
+            </li>
+
+            <li>
+              <a href="#" class="dep1">Solution</a> <!-- ------------------------------------(솔루션) -->
+
+              <ul class="dep2 rightErr">
+                <li><a href="#">모니터링 솔루션</a></li>
+                <span style="line-height:50%"><br></span>
+                <li><a href="#">AI 분석 솔루션</a></li>
+              </ul>
+            </li>
+
+            <li>
+              <a href="#" class="dep1">Use Cases</a> <!-- ------------------------------------(활용사례) -->
+
+              <ul class="dep2">
+                <li><a href="#">기사안</a></li>
+                <span style="line-height:50%"><br></span>
+                <li><a href="#">기술 적용 사례 글</a></li>
+              </ul>
+            </li>
+
+            <li>
+              <a href="#" class="dep1">Contact</a> <!-- ------------------------------------(연락처) -->
+
+              <ul class="dep2 rightErr">
+                <li><a href="#">파트너 모집</a></li>
+                <span style="line-height:50%"><br></span>
+                <li><a href="#">연락처</a></li>
+              </ul>
+            </li>
+
+            <li>
+              <a href="#" class="dep1">Reference Room</a> <!-- ------------------------------------(자료실) -->
+
+              <ul class="dep2 rightErr">
+                <li><a href="#" class="brochure">브로셔</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <div>
+          <a href="#">CONTACT US</a>
+          <a href="#">FAQ</a>
+        </div>
+        <a href="#" class="close">Close</a>
+      </div>
+
+    </div>
+    <ul style="z-index: 9999;">
+      <li><a href="#" class="con">CONTACT US</a></li>
+      <li><a href="#" class="faq">FAQ</a></li>
+      <li><a href="#" class="join">Sign In</a></li>
+      <li><a href="#" class="join-m"></a></li>
+    </ul>
+  </header>
+
+  <!-- MAIN VIDEO -->
+  <div class="video_blur" style="opacity: 0;">
+    <video class="main_video" src="./IDB-video/pexels.mp4" autoplay loop muted></video>
+  </div>
+  <!-- ============================================================================================================     -->
+  <section class="cs_suport wrapper">
+    <div class="img_area"></div>
+    <ul class="top_gnb">
+      <li><a href="#">문의하기</a></li>
+      <i class="fa-solid fa-angle-right"></i>
+      <li><a href="#">서비스 문의</a></li>
+    </ul>
+    <p class="suport_des">IDB는 스마트 팩토리, 스마트 팜, 스마트 시티에 분야에 있어 <br />전문적인 무료 IoT 컨설팅과 스마트 기술을 제안해 드리고 있습니다. <br />여러분의
+      해결하고자 하는 문제점에 집중하여 최적의 적합한 솔루션 구축을 제공합니다.</p>
+
+    <form class="cs_contact_form">
+      <h4>온라인 접수 문의</h4>
+      <span>온라인 양식을 제출하시고 문의 접수를 하시면, 빠르게 연락을 드리겠습니다.</span><br />
+
+      <label for="company_name">회사명</label>
+      <input type="text" id="company_name"><br />
+
+      <label for="customer_name">이름</label>
+      <input type="text" id="customer_name"><br />
+
+      <label for="customer_role">직함</label>
+      <input type="text" id="customer_role"><br />
+
+      <label for="tel">연락처</label>
+      <input type="text" id="tel"><br />
+
+      <label for="user_mail">이메일</label>
+      <input type="text" id="user_mail"><br />
+
+      <label for="types">문의 유형</label>
+      <select name="types" id="types">
+        <option value="제품문의">제품문의</option>
+        <option value="솔루션문의">솔루션문의</option>
+        <option value="소개문의">소개문의</option>
+        <option value="파트너문의">파트너문의</option>
+        <option value="기타">기타</option>
+      </select><br />
+
+      <label for="user_text">문의 내용</label>
+      <input type="text" id="user_text"><br />
+
+      <label for="file">첨부파일이 있으신가요?</label>
+      <input type="file" id="file"><br /><br />
+
+      <input type="checkbox" id="check1"></input><label for="check1" class="check">아이디비의 이용약관에
+        동의합니다.(필수)</label><br />
+      <input type="checkbox" id="check2"></input><label for="check2" class="check">개인정보 수집이용에 동의합니다.(필수)</label><br />
+      <input type="checkbox" id="check3"></input><label for="check3" class="check">만 14세 이상입니다.(필수)</label><br />
+      <input type="checkbox" id="check4"></input><label for="check4" class="check">마케팅 정보 수신에 동의합니다.(선택)</label>
+
+    </form>
+    <button class="cs_suport_btn">제출</button>
+  </section>
+  <!-- ============================================================================================================     -->
+  <!-- Footer -->
+  <footer>
+    <div class="container2">
+      <div class="sec aboutus">
+        <img src="./IDB-images/IDB-LOGO.png" alt="IDB">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+          Animi, quis unde? Debitis aliquam error quibusdam ullam at, maiores,<br>
+          aliquid dignissimos ratione modi quos natus soluta<br>
+          libero beatae minima explicabo! Incidunt.</p>
+      </div>
+      <div class="sec link-menu">
+        <h2>Quick links</h2>
+        <ul class="sec quicklinks">
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Solution</a></li>
+          <li><a href="#">Use case</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Archives</a></li>
+        </ul>
+      </div>
+      <div class="sec contact">
+        <h2>Contact Us</h2>
+        <ul class="info">
+          <li>
+            <span><i class="fa-solid fa-location-dot"></i></span>
+            <span>114, 12th Floor, 216 Shinwoong Tower<br>
+              Tehran-ro, Gangnam-gu,<br>Seoul</span>
+          </li>
+          <li>
+            <span><i class="fa-solid fa-phone"></i></span>
+            <p><a href="tel:+050714267030">+0507 1426 7030</a><br>
+              <a href="tel:+050714267030">+0507 1426 7030</a>
+            </p>
+          </li>
+          <li>
+            <span><i class="fa-solid fa-envelope"></i></span>
+            <p><a href="mailto:ohcho@idb.ai">ohcho@idb.ai</a></p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <div class="copyrightText">
+    <p>Powered by IDB Inc.™, IDB Inc. All rights reserved 2020 in Korea</p>
+  </div>
+
+
+
+  </script>
+</body>
+<script src="./IDB-js/header.js"></script>
+<script src="./IDB-js/popup.js"></script>
+<script>
+  AOS.init();
+</script>
+
+</html>
