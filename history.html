@@ -5,169 +5,120 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="./IDB-css/index.css">
-  <link rel="stylesheet" media="( min-width:701px ) and ( max-width:1555px )" href="IDB-css/table.css">
-  <link rel="stylesheet" media="( min-width:0px ) and ( max-width:700px )" href="./IDB-css/mobile.css">
-
-  <link rel="stylesheet" href="./IDB-css/cs_history.css">
+  <title>INNODATABRIDGE</title>
+  <link rel="icon" href="./images/favicon.ico">
+  <!-- CSS -->
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" media="( min-width:881px ) and ( max-width:1800px )" href="./css/table.css">
+  <link rel="stylesheet" media="( min-width:0px ) and ( max-width:880px )" href="./css/mobile.css">
+  <link rel="stylesheet" href="./css/side_slide_menu.css">
+  <link rel="stylesheet" href="./css/history.css">
   <!-- JQUERY -->
-  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
-    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+  <!-- FONTAWESOME -->
+  <script src="https://kit.fontawesome.com/49069939a7.js" crossorigin="anonymous"></script>
   <!-- AOS -->
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <!-- CSS -->
-  <style>
-    /* Footer */
-
-    footer {
-      position: relative;
-      width: 100%;
-      height: auto;
-      padding: 50px 100px;
-      background: #333;
-      color: #FFF;
-    }
-
-    footer .container2 {
-      width: 100%;
-      display: grid;
-      grid-template-columns: 2fr 1fr 1fr 1fr;
-      grid-gap: 20px;
-    }
-
-    footer .container2 .sec h2 {
-      position: relative;
-      color: #FFF;
-      font-weight: 500;
-      margin-bottom: 15px;
-    }
-
-    footer .container2 .sec p {
-      color: #FFF;
-    }
-
-    .quicklinks {
-      position: relative;
-    }
-
-    .quicklinks li {
-      list-style: none;
-      margin-top: 20px;
-    }
-
-    .quicklinks li a {
-      color: #F7F7F7;
-      text-decoration: none;
-      margin-bottom: 10px;
-    }
-
-    .info {
-      position: relative;
-    }
-
-    .info li {
-      display: grid;
-      grid-template-columns: 30px 1fr;
-      margin-bottom: 16px;
-    }
-
-    .info li span:nth-child(1) {
-      margin-top: 7px;
-      color: #FFF;
-      font-size: 20px;
-    }
-
-    .info li span {
-      color: #FFF;
-    }
-
-    .info a {
-      color: #F7F7F7;
-      text-decoration: none;
-    }
-
-    .info a:hover {
-      color: #FFEB3B;
-    }
-
-    .copyrightText {
-      width: 100%;
-      background: #222;
-      padding: 8px 40px;
-      text-align: center;
-      color: #FFF;
-    }
-  </style>
 </head>
 
 <body>
+  <!-- MOBILE NAV -->
+  <div class="nav-m">
+    <a href="#" class="close hide-btn"></a>
+    <div class="dep1-m">
+      <h2>About Us</h2>
+      <h2>Solution</h2>
+      <h2>Use Cases</h2>
+      <h2>Contact</h2>
+      <h2>Reference Room</h2>
+      <div class="dep2-m">
+        <ul>
+          <li><a href="#">비전</a></li>
+          <span style="line-height:50%"><br></span>
+          <li><a href="#">사업소개</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">모니터링 솔루션</a></li>
+          <span style="line-height:50%"><br></span>
+          <li><a href="#">AI 분석 솔루션</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">기사안</a></li>
+          <span style="line-height:50%"><br></span>
+          <li><a href="#">기술 적용 사례 글</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">파트너 모집</a></li>
+          <span style="line-height:50%"><br></span>
+          <li><a href="#">연락처</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">브로셔</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="sub_dep">
+      <a href="#">CONTACT US</a>
+      <a href="#">FAQ</a>
+    </div>
+  </div>
+
   <!-- NAV -->
   <header>
     <div class="left">
-      <h1><a href="#"></a></h1>
-      <a href="#" class="all"></a>
+      <h1 class="navop"><a href="#"></a></h1>
+      <a href="#" class="all show-btn"></a>
       <div class="nav">
         <h2>Menu</h2>
         <nav>
           <ul>
             <li>
               <a href="#" class="dep1">About Us</a> <!-- ------------------------------------(회사소개) -->
-
               <ul class="dep2">
                 <li><a href="#">비전</a></li>
                 <span style="line-height:50%"><br></span>
                 <li><a href="#">사업소개</a></li>
               </ul>
             </li>
-
             <li>
               <a href="#" class="dep1">Solution</a> <!-- ------------------------------------(솔루션) -->
-
               <ul class="dep2 rightErr">
                 <li><a href="#">모니터링 솔루션</a></li>
                 <span style="line-height:50%"><br></span>
                 <li><a href="#">AI 분석 솔루션</a></li>
               </ul>
             </li>
-
             <li>
               <a href="#" class="dep1">Use Cases</a> <!-- ------------------------------------(활용사례) -->
-
               <ul class="dep2">
                 <li><a href="#">기사안</a></li>
                 <span style="line-height:50%"><br></span>
                 <li><a href="#">기술 적용 사례 글</a></li>
               </ul>
             </li>
-
             <li>
               <a href="#" class="dep1">Contact</a> <!-- ------------------------------------(연락처) -->
-
               <ul class="dep2 rightErr">
                 <li><a href="#">파트너 모집</a></li>
                 <span style="line-height:50%"><br></span>
                 <li><a href="#">연락처</a></li>
               </ul>
             </li>
-
             <li>
               <a href="#" class="dep1">Reference Room</a> <!-- ------------------------------------(자료실) -->
-
               <ul class="dep2 rightErr">
                 <li><a href="#" class="brochure">브로셔</a></li>
               </ul>
             </li>
           </ul>
         </nav>
+
         <div>
           <a href="#">CONTACT US</a>
           <a href="#">FAQ</a>
         </div>
-        <a href="#" class="close">Close</a>
       </div>
-
     </div>
     <ul style="z-index: 9999;">
       <li><a href="#" class="con">CONTACT US</a></li>
@@ -176,11 +127,6 @@
       <li><a href="#" class="join-m"></a></li>
     </ul>
   </header>
-
-  <!-- MAIN VIDEO -->
-  <div class="video_blur" style="opacity: 0;">
-    <video class="main_video" src="./IDB-video/pexels.mp4" autoplay loop muted></video>
-  </div>
   <!-- ============================================================================================================     -->
   <section class="cs_suport wrapper">
     <div class="img_area"></div>
@@ -236,58 +182,9 @@
     <button class="cs_suport_btn">제출</button>
   </section>
   <!-- ============================================================================================================     -->
-  <!-- Footer -->
-  <footer>
-    <div class="container2">
-      <div class="sec aboutus">
-        <img src="./IDB-images/IDB-LOGO.png" alt="IDB">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
-          Animi, quis unde? Debitis aliquam error quibusdam ullam at, maiores,<br>
-          aliquid dignissimos ratione modi quos natus soluta<br>
-          libero beatae minima explicabo! Incidunt.</p>
-      </div>
-      <div class="sec link-menu">
-        <h2>Quick links</h2>
-        <ul class="sec quicklinks">
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Solution</a></li>
-          <li><a href="#">Use case</a></li>
-          <li><a href="#">Contact Us</a></li>
-          <li><a href="#">Archives</a></li>
-        </ul>
-      </div>
-      <div class="sec contact">
-        <h2>Contact Us</h2>
-        <ul class="info">
-          <li>
-            <span><i class="fa-solid fa-location-dot"></i></span>
-            <span>114, 12th Floor, 216 Shinwoong Tower<br>
-              Tehran-ro, Gangnam-gu,<br>Seoul</span>
-          </li>
-          <li>
-            <span><i class="fa-solid fa-phone"></i></span>
-            <p><a href="tel:+050714267030">+0507 1426 7030</a><br>
-              <a href="tel:+050714267030">+0507 1426 7030</a>
-            </p>
-          </li>
-          <li>
-            <span><i class="fa-solid fa-envelope"></i></span>
-            <p><a href="mailto:ohcho@idb.ai">ohcho@idb.ai</a></p>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </footer>
-  <div class="copyrightText">
-    <p>Powered by IDB Inc.™, IDB Inc. All rights reserved 2020 in Korea</p>
-  </div>
-
-
 
   </script>
 </body>
-<script src="./IDB-js/header.js"></script>
-<script src="./IDB-js/popup.js"></script>
 <script>
   AOS.init();
 </script>
