@@ -248,3 +248,5 @@ footer { bottom: -5100px; }
 footer { flex-direction:column; height: 1900px; justify-content: center; align-items: center; }
 
 .footer_con1 { height: 150px; }
+
+.modal-body .suport_des { font-size: 10px; }
