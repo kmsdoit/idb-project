@@ -205,6 +205,7 @@ footer { bottom: -5100px; }
     .consultation > .consultation_container > .consultation_content04 h4 { margin-left: 150px; }
     .stats_content06 p { left: 50%; transform: translateX(-50%); }
     .consultation>.consultation_container > .consultation_contact:hover { top: 73%; box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px; background: #252525;  }
+    button.cs_suport_btn{position: relative;}
 }
 
 @media screen and (max-width:768px) { footer { bottom: -5400px; } }
