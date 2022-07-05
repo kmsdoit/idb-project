@@ -21,8 +21,8 @@ AOS.init();
 
 // POPUP 버튼
 $('.pop-show').click(function(){
-  $('.modal').fadeIn()
+  $('.modal-bg').fadeIn()
 })
 $('.pop-hide').click(function(){
-  $('.modal').fadeOut()
+  $('.modal-bg').fadeOut()
 })
