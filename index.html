@@ -67,9 +67,70 @@
 
   <!-- NAV -->
   <header>
+    <!-- 문의하기 modal -->
+    <div class="modal-bg" id="modal">
+      <div class="modal-inner">
+        <div class="modal-header">
+          <div class="modal-title">문의하기</div>
+          <button class="close-button pop-hide">&times;</button>
+        </div>
+        <div class="modal-body">
+          <p class="suport_des">IDB는 스마트 팩토리, 스마트 팜, 스마트 시티에 분야에 있어 <br />전문적인 무료 IoT 컨설팅과 스마트 기술을 제안해 드리고 있습니다.
+            <br />여러분의
+            해결하고자 하는 문제점에 집중하여 최적의 적합한 솔루션 구축을 제공합니다.
+          </p>
+  
+          <form class="cs_contact_form">
+  
+            <label for="company_name">회사명</label>
+            <input type="text" id="company_name"><br />
+  
+            <label for="customer_name">이름</label>
+            <input type="text" id="customer_name"><br />
+  
+            <label for="customer_role">직함</label>
+            <input type="text" id="customer_role"><br />
+  
+            <label for="tel">연락처</label>
+            <input type="text" id="tel"><br />
+  
+            <label for="user_mail">이메일</label>
+            <input type="text" id="user_mail"><br />
+  
+            <label for="types">문의 유형</label>
+            <select name="types" id="types">
+              <option value="제품문의">제품문의</option>
+              <option value="솔루션문의">솔루션문의</option>
+              <option value="소개문의">소개문의</option>
+              <option value="파트너문의">파트너문의</option>
+              <option value="기타">기타</option>
+            </select><br />
+  
+            <label for="user_text">문의 내용</label>
+            <input type="text" id="user_text"><br />
+  
+            <input type="checkbox" id="check1"></input><label for="check1" class="check"> 아이디비의 이용약관에
+              동의합니다.(필수)</label><br />
+            <input type="checkbox" id="check2"></input><label for="check2" class="check"> 개인정보 수집이용에
+              동의합니다.(필수)</label><br />
+            <input type="checkbox" id="check3"></input><label for="check3" class="check"> 만 14세 이상입니다.(필수)</label><br />
+            <input type="checkbox" id="check4"></input><label for="check4" class="check"> 마케팅 정보 수신에 동의합니다.(선택)</label>
+  
+          </form>
+          <button class="cs_suport_btn">제출</button>
+        </div>
+
+
+      </div>
+      
+    </div>
+    <!-- 문의하기 끝 -->
+    <div id="overlay"></div>
+
     <div class="left">
       <h1 class="navop"><a href="#"></a></h1>
       <a href="#" class="all show-btn"></a>
+      <!-- display: none 상태 -->
       <div class="nav">
         <h2>Menu</h2>
         <nav>
@@ -124,58 +185,6 @@
       <li><a href="#" class="join-m"></a></li>
     </ul>
 
-    <div class="modal" id="modal">
-      <div class="modal-header">
-        <div class="modal-title">문의하기</div>
-        <button class="close-button pop-hide">&times;</button>
-      </div>
-      <div class="modal-body">
-        <p class="suport_des">IDB는 스마트 팩토리, 스마트 팜, 스마트 시티에 분야에 있어 <br />전문적인 무료 IoT 컨설팅과 스마트 기술을 제안해 드리고 있습니다.
-          <br />여러분의
-          해결하고자 하는 문제점에 집중하여 최적의 적합한 솔루션 구축을 제공합니다.
-        </p>
-
-        <form class="cs_contact_form">
-
-          <label for="company_name">회사명</label>
-          <input type="text" id="company_name"><br />
-
-          <label for="customer_name">이름</label>
-          <input type="text" id="customer_name"><br />
-
-          <label for="customer_role">직함</label>
-          <input type="text" id="customer_role"><br />
-
-          <label for="tel">연락처</label>
-          <input type="text" id="tel"><br />
-
-          <label for="user_mail">이메일</label>
-          <input type="text" id="user_mail"><br />
-
-          <label for="types">문의 유형</label>
-          <select name="types" id="types">
-            <option value="제품문의">제품문의</option>
-            <option value="솔루션문의">솔루션문의</option>
-            <option value="소개문의">소개문의</option>
-            <option value="파트너문의">파트너문의</option>
-            <option value="기타">기타</option>
-          </select><br />
-
-          <label for="user_text">문의 내용</label>
-          <input type="text" id="user_text"><br />
-
-          <input type="checkbox" id="check1"></input><label for="check1" class="check"> 아이디비의 이용약관에
-            동의합니다.(필수)</label><br />
-          <input type="checkbox" id="check2"></input><label for="check2" class="check"> 개인정보 수집이용에
-            동의합니다.(필수)</label><br />
-          <input type="checkbox" id="check3"></input><label for="check3" class="check"> 만 14세 이상입니다.(필수)</label><br />
-          <input type="checkbox" id="check4"></input><label for="check4" class="check"> 마케팅 정보 수신에 동의합니다.(선택)</label>
-
-        </form>
-        <button class="cs_suport_btn">제출</button>
-      </div>
-    </div>
-    <div id="overlay"></div>
   </header>
 
   <!-- MAIN VIDEO -->
@@ -375,7 +384,7 @@
   <!-- Footer -->
   <footer>
     <div class="footer_con1">
-      <h2>㈜아이디비 | INNODATABRIDGE</h2>
+      <h2>아이디비㈜ | IDB Inc.</h2>
       <p>Powered by IDB Inc.™, IDB Inc. All rights reserved 2020 in Korea</p>
       <span>
         <a href="#"><i class="fa-brands fa-youtube"></i></a>
@@ -412,17 +421,26 @@
         <h3>Reference Room</h3><br>
         <a href="#">브로셔</a>
       </div>
+
       <div class="footer_con4_item02">
-        <i class="fa-solid fa-location-dot"></i> &nbsp;&nbsp;&nbsp;&nbsp;
-        <span style="line-height:25px;">114, 12th Floor, 216<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Shinwoong Tower Tehran-ro,<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gangnam-gu,&nbsp;Seoul</span><br><br>
-        <p><i class="fa-solid fa-phone"></i>&nbsp;&nbsp;&nbsp;&nbsp;<a href="tel:+050714267030"
-            style="line-height:25px;">+0507 1426 7030</a><br>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="tel:+050714267030">+0507 1426 7030</a></p><br>
-        <p><i class="fa-solid fa-envelope"></i>&nbsp;&nbsp;&nbsp;&nbsp; <a href="mailto:ohcho@idb.ai">ohcho@idb.ai</a>
-        </p>
+        <div class="location-wrap">
+          <i class="fa-solid fa-location-dot"></i>
+          <p class="location-p">114, 12th Floor, 216<br>
+            <span>Shinwoong Tower Tehran-ro,</span><br>
+            <span>Gangnam-gu, Seoul</span><br>
+          </p>
+        </div>
+        <div class="tel-wrap">
+          <i class="fa-solid fa-phone"></i>
+          <a href="tel:+07043887030" class="tel-link">Tel. 070 4388 7030</a><br>
+          <a href="tel:+05044777030" class="fax-link">Fax. 0504 477 7030</a><br>
+        </div>
+        <div class="email-wrap">
+          <i class="fa-solid fa-envelope"></i>
+          <a href="mailto:bkmin@idb.ai" class="email-link">Email. bkmin@idb.ai</a>
+        </div>
       </div>
+
     </div>
   </footer>
 

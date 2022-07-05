@@ -1,19 +1,63 @@
-.modal { position: fixed; top: 50%; left: 50%; transform: translate(-50%,-50%); z-index: 9999999; width: 100%; max-width: 80%; display: none;color: #fff; }
+/*^ 문의하기(Contact Us) */
+
+.modal-bg {
+	position: fixed;
+	/* transform: translate(80%,0%); */
+	left: 100px;
+	top: 0px;
+	/* margin: 100px auto; */
+	z-index: 999999;
+	width: 100%;
+	/* height: 100%; */
+	display: none;
+	color: #fff;
+}
+
+.modal-inner {
+  width: 40%;
+	height: 700px;
+  margin: auto;
+  padding: 20px;
+  border-radius: 10px;
+	position: relative;
+}
+
+
+
+
+
+
+/*~ header ~*/
 .modal.active { transform: translate(-50%, -50%) }
 .modal-header { padding: 10px 15px; display: flex; justify-content: space-between; align-items: center;
-    background: rgba(0, 135, 255, 1);
-
-}
+	background: rgba(0, 123, 255, 0.5);}
 .modal-header .modal-title { font-size: 22px; font-family: 'GmarketSansBold'; padding-top: 5px; }
 .modal-header .close-button { cursor: pointer; border: none; outline: none; background: none;color: #fff; font-size: 30px; }
-.modal-body { padding: 10px 15px; font-family: 'GmarketSansBold';
-    background: rgba(0, 135, 255, 1);
-}
 
+
+/*~ body ~*/
+.modal-body { padding: 10px 15px; font-family: 'GmarketSansBold'; background: rgba(0, 135, 255, 0.5); }
 .modal-body>p {text-align: center;margin-top: 20px;}
 .modal-body>form>span {margin-top: 25px;}
-.modal-body>form>input[type="text"],#types {width: 100%;color: hsl(0, 0, 20);padding: 10px;border-radius: 5px;font-size: 15px;outline: none!important;box-shadow: inset 0 1px 4px hsla(0, 0, 0, 0.2);margin-bottom: 15px;}
-button.cs_suport_btn{font-family: 'GmarketSansBold';font-size:30px;width: 30%;height: 90px;position:absolute ;bottom:15px;right:15px }
+.modal-body>form>input[type="text"], #types {
+	width: 100%;
+	color: hsl(0, 0, 20);
+	padding: 10px;
+	border-radius: 5px;
+	font-size: 15px;
+	outline: none;
+	box-shadow: inset 0 1px 4px hsla(0, 0, 0, 0.2);
+	margin-bottom: 15px;
+}
+button.cs_suport_btn{
+	font-family: 'GmarketSansBold';
+	font-size:30px;
+	width: 30%;
+	height: 90px;
+	position:absolute;
+	bottom:15px;
+	right:15px
+}
 
 .modal-body .suport_des { font-size: 20px; margin: 30px 0 0 0; }
 .modal-body .cs_contact_form { padding: 30px; }
